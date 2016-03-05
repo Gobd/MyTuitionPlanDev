@@ -1,4 +1,19 @@
-angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interval, $timeout){
+angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interval, $timeout, $window){
+
+  angular.element($window).bind('resize', function(){
+    if ($window.innerWidth < 1188) {
+      var num = $window.innerWidth * 0.016;
+    } else {
+      var num = 19;
+    }
+    var numFix = num.toFixed(0);
+    var size = numFix + 'px';
+    $scope.textSize = size;
+    $scope.$apply();
+});
+
+
+
     $scope.name = "test";
     var imgBank = [
 // /*ocean*/          "https://images.unsplash.com/photo-1449168013943-3a15804bb41c?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1425",
@@ -14,6 +29,9 @@ angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interva
 // /*oceancliff*/     "https://images.unsplash.com/photo-1454625191319-786c05137ef5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=be8b9d695058e46a8b409d5cacae8a7a",
 // /*stadium*/        "https://images.unsplash.com/photo-1420177743490-15ee9ba8c78f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1425"
                   ]
+
+
+
     var quoteBank = [
 
       "So you don't have to go it alone.",
@@ -36,6 +54,8 @@ angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interva
     // console.log(i);
     // $scope.imgMain = imgBank[i];
 
+    // $scope.imgMain = imgBank[1];
+    // $scope.quoteMain = quoteBank[1];
 
     // ====image cycle======
     var i = 0;
