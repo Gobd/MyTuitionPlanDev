@@ -52,7 +52,7 @@ angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interva
         $scope.imgMain = imgBank[i];
         $scope.quoteMain = quoteBank[i];
       }
-    }, 3000);
+    }, 5000);
 
 
   //  ===========Coundown Clock================

@@ -13,6 +13,7 @@ html {
 #main {
   width: 100%;
   height: 100%;
+  transition: background-image 0.2s ease-in-out;
 }
 #main:after {
   z-index: 1;
