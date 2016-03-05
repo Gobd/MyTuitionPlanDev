@@ -1,21 +1,24 @@
 html, body {
-  z-index: 1;
   margin: 0;
   padding: 0;
+  height: 100%;
   width: 100%;}
-.main {
+#main {
   width: 100%;
-  min-width: 1100px;
+  height: 100%;
 }
-html:after {
-    z-index: -1;
+#main:after {
+    z-index: 1;
     content: ' ';
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.8);
+}
+#moreContent {
+  height: 500px;
 }
 .sec1 {
   width: 100%;
@@ -30,7 +33,7 @@ html:after {
 
       font-size: 20px;
       font-family: Poiret One;
-      /*text-align: right;*/
+
     }
       .loginInnerLeft {
         text-align: left;
@@ -50,6 +53,7 @@ html:after {
         }
 
       .titleLarge {
+        z-index: 2;
         position: absolute;
         top: 30px;
         width: 100%;
@@ -58,18 +62,13 @@ html:after {
         color: white;
       }
       .innerBanner {
-        text-align: center; /*this was the ah ha! moment in trying to center align the title*/
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
+        z-index: 2;
+        text-align: center;
       }
 
         #my {
           position: relative;
-          /*top: 65px;*/
-          /*right: 432px;*/
-          /*width: 100%;*/
-          /*min-width: 1100px;*/
+
 
           font-size: 30px;
           color: white;
@@ -78,22 +77,9 @@ html:after {
           letter-spacing: 0.20em;
 
 
-          /* Safari rotate div kit from css-tricks*/
-          /*-webkit-transform: rotate(90deg);*/
-          /* Firefox */
-          /*-moz-transform: rotate(90deg);*/
-          /* IE */
-          /*-ms-transform: rotate(90deg);*/
-          /* Opera */
-          /*-o-transform: rotate(90deg);*/
-          /* Internet Explorer */
-          /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
         }
         #tuition {
-          /*position: absolute;*/
-          /*top: 220px;*/
-          /*width: 100%;*/
-          /*min-width: 1100px;*/
+
           margin: 0px 20px 0px 20px;
 
           font-size: 110px;
@@ -101,14 +87,10 @@ html:after {
           font-family: Montserrat;
           text-shadow: 0 2px 0 black;
           letter-spacing: 1.5px;
-          /*text-decoration: overline underline;*/
+
           letter-spacing: 0.20em;
           border-top: 2px black;
-/*
-          border-top: 1px solid white;
-           border-bottom: 1px solid white;
-           display: inline-block;
-           margin: 0 auto;*/
+
 
            border-top: 4px solid white;
            border-bottom: 4px solid white;
@@ -117,34 +99,14 @@ html:after {
            padding: 0px 0 1px 0;
         }
 
-          #kerning {
-            /*letter-spacing: 0.07em;*/
 
-          }
         #plan {
-          /*position: relative;*/
-          /*top: -212px;*/
-          /*right: -490px;*/
-          /*width: 100%;*/
-          /*min-width: 1100px;*/
 
           font-size: 30px;
           color: white;
           font-family: Montserrat;
           text-shadow: 0 2px 0 black;
           letter-spacing: 0.20em;
-
-
-           /*Safari rotate div kit from css-tricks*/
-          /*-webkit-transform: rotate(90deg);*/
-           /*Firefox*/
-          /*-moz-transform: rotate(90deg);*/
-           /*IE*/
-          /*-ms-transform: rotate(90deg);*/
-           /*Opera*/
-          /*-o-transform: rotate(90deg);*/
-           /*Internet Explorer*/
-          /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 
         }
       #title {
@@ -167,7 +129,6 @@ html:after {
           min-width: 1100px;
           font: old-stamper;
 
-            /*====Rotation======*/
           -webkit-transform: rotate(-20deg);
           -moz-transform: rotate(-20deg);
           -o-transform: rotate(-20deg);
@@ -183,6 +144,7 @@ html:after {
         }
 
         .quoteMain {
+          z-index: 2;
           text-align: center;
           color: white;
           margin-top:15px;
@@ -196,6 +158,4 @@ html:after {
 
         }
 
-  /*.credit {
-    font-size: 8px*/
   }
