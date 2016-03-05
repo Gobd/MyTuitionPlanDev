@@ -15,14 +15,14 @@ html {
   height: 100%;
 }
 #main:after {
-    z-index: 1;
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  content: ' ';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
 }
 #moreContent {
   width: 100%;
@@ -33,135 +33,106 @@ html {
   width: 100%;
   min-width: 1100px;
 }
+.login {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: Poiret One;
+}
+.loginInnerLeft {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+.loginInnerRight {
+  text-align: right;
+  width: 100%;
+}
+#signIn {
+  margin-right: 35px;
+}
+.titleLarge {
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  color: white;
+}
+.innerBanner {
+  z-index: 2;
+}
+#my {
+  font-size: 30px;
+  color: white;
+  font-family: Montserrat;
+  text-shadow: 0 2px 0 black;
+  letter-spacing: 0.20em;
+}
+#tuition {
+  font-size: 110px;
+  color: white;
+  font-family: Montserrat;
+  text-shadow: 0 2px 0 black;
+  letter-spacing: 1.5px;
+  letter-spacing: 0.20em;
+  border-top: 2px black;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 0px 0 2px .2em;
+}
+#plan {
+  font-size: 30px;
+  color: white;
+  font-family: Montserrat;
+  text-shadow: 0 2px 0 black;
+  letter-spacing: 0.20em;
+}
+#title {
+  color: black;
+  width: 100%;
+  min-width: 1100px;
+  display: flex;
+}
+#topTitle {
+  margin-top: 15px;
+  font-size: 32px;
+  font-family: Poiret One;
+  text-shadow: 0 2px 0 black;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  min-width: 1100px;
+  font: old-stamper;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.subTitle {
+  margin-top: 15px;
+  font-size: 32px;
+  font-family: Poiret One;
+  text-shadow: 0 2px 0 black;
+}
+.quoteMain {
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  font-size: 32px;
+  font-family: Poiret One;
+  text-shadow: 0 2px 0 black;
+  position: absolute;
+  top: 500px;
+  width: 100%;
+}
 
-    .login {
-      width: 100%;
-      position: absolute;
-      top: 20px;
-      color: white;
-
-      font-size: 20px;
-      font-family: Poiret One;
-
-    }
-      .loginInnerLeft {
-        text-align: left;
-        margin-left: 30px;
-        margin-top: 2px;
-      }
-      .loginInnerRight {
-        text-align: right;
-        width: 100%;
-      }
-      #createaccount {
-
-      }
-        #signIn {
-          margin-right: 35px;
-        }
-
-      .titleLarge {
-        z-index: 2;
-        position: absolute;
-        top: 30px;
-        width: 100%;
-        color: white;
-      }
-      .innerBanner {
-        z-index: 2;
-        text-align: center;
-      }
-
-        #my {
-          position: relative;
-
-
-          font-size: 30px;
-          color: white;
-          font-family: Montserrat;
-          text-shadow: 0 2px 0 black;
-          letter-spacing: 0.20em;
-
-
-        }
-        #tuition {
-
-          /*margin: 0px 20px 0px 20px;*/
-          font-size: 110px;
-          color: white;
-          font-family: Montserrat;
-          text-shadow: 0 2px 0 black;
-          letter-spacing: 1.5px;
-
-          letter-spacing: 0.20em;
-          border-top: 2px black;
-
-
-           border-top: 4px solid white;
-           border-bottom: 4px solid white;
-           display: inline-block;
-           margin: 10px auto;
-           padding: 0px 0 2px .2em;
-        }
-
-
-        #plan {
-
-          font-size: 30px;
-          color: white;
-          font-family: Montserrat;
-          text-shadow: 0 2px 0 black;
-          letter-spacing: 0.20em;
-
-        }
-      #title {
-        color: black;
-        width: 100%;
-        min-width: 1100px;
-        display: flex;
-
-      }
-
-        #topTitle {
-          margin-top:15px;
-          font-size: 32px;
-          font-family: Poiret One;
-          text-shadow: 0 2px 0 black;
-          text-align: center;
-          position: absolute;
-          top: 300px;
-          width: 100%;
-          min-width: 1100px;
-          font: old-stamper;
-
-          -webkit-transform: rotate(-20deg);
-          -moz-transform: rotate(-20deg);
-          -o-transform: rotate(-20deg);
-          -ms-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-        }
-        .subTitle {
-          margin-top:15px;
-          font-size: 32px;
-          font-family: Poiret One;
-          text-shadow: 0 2px 0 black;
-
-        }
-
-        .quoteMain {
-          z-index: 2;
-          text-align: center;
-          color: white;
-          padding-left: 15px;
-          padding-right: 15px;
-          margin-top:15px;
-          font-size: 32px;
-          font-family: Poiret One;
-          text-shadow: 0 2px 0 black;
-          position: absolute;
-          top: 500px;
-          width: 100%;
-
-        }
-
-  }
+}
