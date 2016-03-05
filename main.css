@@ -61,6 +61,7 @@ html {
   color: white;
 }
 .innerBanner {
+  text-align: center;
   z-index: 2;
 }
 #my {
